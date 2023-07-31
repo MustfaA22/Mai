@@ -1,0 +1,41 @@
+.navbar {
+    width: 100%;
+    min-height: 6em;
+    background-color: var(--purple);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+
+    position: fixed;
+}
+
+.logo {
+    position: absolute;
+    left: 100px;
+}
+
+.links {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+
+.links button {
+    text-decoration: none;
+
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.links button:hover {
+    color: var(--pink);
+    outline: none;
+}
+
+.links button.active {
+    color: var(--pink);
+    font-weight: 600;
+}
