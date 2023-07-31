@@ -16,4 +16,3 @@ export const useOnScreen = (ref) => {
 
   return isOnScreen;
 }
-
