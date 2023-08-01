@@ -1,0 +1,18 @@
+.footer {
+    background-color: var(--purple);
+}
+
+.logos {
+    padding: 3em 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.rightsReservedText {
+    text-align: center;
+    color: var(--white);
+
+    padding-bottom: 1em;
+}
