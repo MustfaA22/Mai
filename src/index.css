@@ -11,6 +11,7 @@
   --white: #f6f6f6;
   --purple: #5d378c;
   --pink: #e72f84;
+  --dark-pink: #ba296d;
 }
 
 *, *::before, *::after {
@@ -69,4 +70,24 @@ section {
 
   padding: 4em;
   margin-bottom: 1vh;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--pink);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-pink);
 }
