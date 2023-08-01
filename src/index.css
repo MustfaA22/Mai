@@ -61,15 +61,12 @@ button {
   cursor: pointer;
 }
 
-/* 
-button:hover {}
-
-button:focus,
-button:focus-visible {} */
-
 section {
-  margin-bottom: 1vh;
-  min-height: 100vh;
   text-align: center;
-  background-color: #e72f84;
+  background-color: #e72f8411;
+
+  min-height: 100vh;
+
+  padding: 4em;
+  margin-bottom: 1vh;
 }
