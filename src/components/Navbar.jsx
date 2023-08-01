@@ -1,4 +1,4 @@
-import classes from "./Navbar.module.css";
+import classes from "../styles/Navbar.module.css";
 import logo from "../assets/images/logo.svg";
 import { useContext } from "react";
 import { NavContext } from "../context/NavContext";
@@ -15,11 +15,12 @@ function Navbar() {
     document.getElementById("home").scrollIntoView({behavior: "smooth", block: "center" });
   }
   
-  function renderNavLink (content, i, activeLinkId) {  
+  // function to render nav links
+  function renderNavLink (content, i, activeLinkId) {
     const handleClickNav = () => {
       document.getElementById(content).scrollIntoView({behavior: "smooth", block: "center" });
     }
-    
+
     return (
       <ul key={content}>
         <li>
@@ -32,12 +33,15 @@ function Navbar() {
     )
   }
 
-
-
   return (
       <nav className={classes.navbar}>
         <div className={classes.logo}>
-          <img src={logo} style={{width: "70px", objectFit: "contain", objectPosition: "center"}} alt="logo" onClick={handlerClickLogo}/>
+          <img 
+            src={logo} 
+            style={{width: "70px", objectFit: "contain", objectPosition: "center"}} 
+            alt="logo"
+            onClick={handlerClickLogo}
+          />
         </div>
         <div className={classes.links}>
               {navLinks.map((nav, i) => 

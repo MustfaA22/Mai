@@ -1,4 +1,4 @@
-import classes from "./AllSections.module.css";
+import classes from "../styles/AllSections.module.css";
 
 import HomeSection from "./sections/HomeSection";
 import ProgramAspectsSection from "./sections/ProgramAspectsSection";
