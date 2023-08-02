@@ -3,22 +3,24 @@ import logo from "../assets/images/logo.svg";
 import { useContext } from "react";
 import { NavContext } from "../context/NavContext";
 
-const navLinks = ["home", "program-aspects", "goals", "who-are-we", "contact-us"];
-const navLinksContent = [" الصفحة الرئيسية", "جوانب البرنامج", "الاهداف", "من نحن", "تواصل معنا"];
+// const navLinks = ["home", "program-aspects", "goals", "who-are-we", "contact-us"];
+// const navLinksContent = [, "جوانب البرنامج", "الاهداف", "من نحن", "تواصل معنا"];
+
+const navLinks = ["sponsors", "contest", "register-now", "program-content", "home"];
+const navLinksContent = ["الرعاة", "المسابقة", "سجل الان", "محتوى البرنامج", "الصفحة الرئيسية"];
 
 function Navbar() {
 
   const { activeLinkId } = useContext(NavContext);
   
-  
   const handlerClickLogo = () => {
-    document.getElementById("home").scrollIntoView({behavior: "smooth", block: "center" });
+    document.getElementById("home").scrollIntoView({ behavior: "smooth", block: "center" });
   }
   
   // function to render nav links
   function renderNavLink (content, i, activeLinkId) {
     const handleClickNav = () => {
-      document.getElementById(content).scrollIntoView({behavior: "smooth", block: "center" });
+      document.getElementById(content).scrollIntoView({ behavior: "smooth", block: "center" });
     }
 
     return (
