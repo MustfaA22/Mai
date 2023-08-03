@@ -2,11 +2,12 @@
 
 TODO:
 
+-  (in home section) "IoT KIDS" is not rendered the right way with arabic text
 -  (in footer) make sure that whatsapp logo have a link
 -  (in footer) make sure that you have a better ux (like having an animation or something on hover)
--  create all the in between sections
+-  create all the in-between sections
 -  everything should be responsive
--  (in home section) "IoT KIDS" is not rendered the right way with arabic text
+-  meta tags for SEO and social media link sharing
 
 DONE.
 
