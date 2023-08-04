@@ -20,7 +20,7 @@ function Navbar() {
   // function to render nav links
   function renderNavLink (content, i, activeLinkId) {
     const handleClickNav = () => {
-      document.getElementById(content).scrollIntoView({ behavior: "smooth", block: "center" });
+      document.getElementById(content).scrollIntoView({ behavior: "smooth", block: "start" });
     }
 
     return (
