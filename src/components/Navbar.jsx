@@ -14,7 +14,7 @@ function Navbar() {
   const { activeLinkId } = useContext(NavContext);
   
   const handlerClickLogo = () => {
-    document.getElementById("home").scrollIntoView({ behavior: "smooth", block: "center" });
+    document.getElementById("home").scrollIntoView({ behavior: "smooth", block: "start" });
   }
   
   // function to render nav links
