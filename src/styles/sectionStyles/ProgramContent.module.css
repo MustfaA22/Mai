@@ -1,0 +1,99 @@
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    padding-bottom: 10em;
+}
+
+.contentWrapper h1 {
+    padding-bottom: .6em;
+}
+
+.programContentInfo {
+    font-size: 2.4rem;
+}
+
+.skillsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+}
+
+.logoAndTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.logo {
+    width: 90px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+
+    background-color: var(--gray-background);
+    padding: 2em;
+    border-radius: 20px;
+
+}
+
+.skill {
+    width: 350px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4em;
+}
+
+.skill p {
+    width: 25ch;
+    font-size: 1.8rem;
+}
+
+.skillLogo {
+    width: 75px;
+}
+
+.interactiveContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.interactiveContent img {
+    width: 75px;
+}
+
+.interactiveContentGraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+
+    background-color: var(--gray-background);
+
+    padding: 2em 8em;
+    border-radius: 20px;
+}
+
+.interactiveContentGraphItem {
+    min-width: 180px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
