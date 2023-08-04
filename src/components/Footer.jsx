@@ -10,33 +10,36 @@ function Footer() {
   return (
     <footer className={classes.footer}>
       <div className={classes.logos}>
+
         <img 
           src={maiWhiteLogo} 
           alt="mai logo" 
-          style={{width: "160px", height: "auto", margin: "0 15px", display: "block", objectFit: "contain"}}
+          style={{ width: "160px", height: "auto", margin: "0 15px", display: "block", objectFit: "contain" }}
         />
+
         <a href="https://iotkidsiq.com/" target="_blank" rel="noreferrer">
           <img 
             src={iotKidsLogo} 
             alt="iot kids logo" 
-            style={{width: "160px", height: "auto", margin: "0 15px", display: "block", objectFit: "contain"}}
+            style={{ width: "160px", height: "auto", margin: "0 15px", display: "block", objectFit: "contain" }}
           />
         </a>
 
-        <div className="social" style={{display: "flex", justifyContent: "center", alignItems: "center", gap: "1em"}}>
+        <div className="social" style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "1em" }}>
           <a href="https://www.facebook.com/IoTKIDS/" target="_blank" rel="noreferrer">
-            <BiLogoFacebookCircle style={{width: "56px", height: "auto", color: "#fff"}} />
+            <BiLogoFacebookCircle style={{ width: "56px", height: "auto", color: "#fff" }} />
           </a>
           <a href="#" target="_blank" rel="noreferrer">
-            <IoLogoWhatsapp style={{width: "56px", height: "auto", color: "#fff"}} />
+            <IoLogoWhatsapp style={{ width: "56px", height: "auto", color: "#fff" }} />
           </a>
           <a href="https://www.instagram.com/iotkids/" target="_blank" rel="noreferrer">
-            <AiFillInstagram style={{width: "56px", height: "auto", color: "#fff"}} />
+            <AiFillInstagram style={{ width: "56px", height: "auto", color: "#fff" }} />
           </a>
         </div>
+
       </div>
 
-      <p className={classes.rightsReservedText}> all right reserved 2023 </p>
+      <p className={classes.rightsReservedText}> All right reserved 2023 </p>
     </footer>
   )
 }
