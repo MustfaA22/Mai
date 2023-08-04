@@ -16,20 +16,18 @@ TODO:
 
 DONE:
 
--  the title and the icon on the browser tab DONE.
--  setup the project. DONE.
--  setup all the assets you need (fonts, colors, images, etc.) DONE.
--  create the navbar and the footer (in progress) DONE.
--  (in home section) "IoT KIDS" is not rendered the right way with arabic text DONE.
-
-   -  Solution => i had to use a css property called direction cause arabic is a right to left written language and the default direction is set to the english language direction which is ltr.
-
+-  the title and the icon on the browser tab DONE
+-  setup the project. DONE
+-  setup all the assets you need (fonts, colors, images, etc.) DONE
+-  create the navbar and the footer (in progress) DONE
+-  (in home section) "IoT KIDS" is not rendered the right way with arabic text DONE
+   -  Solution => i had to use a css property called direction cause arabic is a right to left written language and the default direction is set to the english language direction which is ltr
    ```css
    p,
    h1,
    h2,
    h3,
    a {
-      direction: rtl;
+      direction: rlt;
    }
    ```
