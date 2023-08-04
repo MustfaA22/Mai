@@ -1,4 +1,4 @@
-.home {}
+/* .home {} */
 
 .background {
     position: absolute;
@@ -12,7 +12,7 @@
 }
 
 .contentWrapper {
-    min-height: 100vh;
+    height: 100vh;
 
     display: flex;
     justify-content: space-around;
@@ -25,13 +25,10 @@
     margin-left: 12em;
 }
 
-.titleAndParagraph {
-    margin-top: 5em;
-}
+/* .titleAndParagraph {} */
 
 .titleAndParagraph h1 {
     font-size: 4.2rem;
-    font-weight: 700;
     color: var(--purple);
 }
 
