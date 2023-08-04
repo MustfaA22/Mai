@@ -9,7 +9,7 @@
 
   /* colors */
   --white: #f6f6f6;
-  --gray-background: #e6e6e6;
+  --gray-background: #eeeeee;
   --purple: #5d378c;
   --pink: #e72f84;
   --dark-pink: #ba296d;
@@ -93,7 +93,7 @@ section {
 
   min-height: 100vh;
 
-  padding: 7em 5em 0em;
+  padding: 6em 5em 0em;
   margin-bottom: 1vh;
 }
 
