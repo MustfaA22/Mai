@@ -9,6 +9,7 @@
 
   /* colors */
   --white: #f6f6f6;
+  --gray-background: #e6e6e6;
   --purple: #5d378c;
   --pink: #e72f84;
   --dark-pink: #ba296d;
@@ -29,10 +30,13 @@ html {
   font-size: 62.5%;
 }
 
+p, h1, h2, h3, a {
+  direction: rtl;
+}
+
 body {
   font-family: 'Noto Sans Arabic', sans-serif;
   line-height: 1.5;
-  min-height: 100vh;
 }
 
 img,
@@ -46,7 +50,28 @@ video {
 
 h1 {
   font-size: 3.2rem;
+  font-weight: 700;
   line-height: 1.1;
+  color: var(--purple);
+}
+
+h2 {
+  font-size: 2.8rem;
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+p {
+  font-size: 2rem;
+  font-weight: 400;
+
+  color: #444;
 }
 
 ul {
@@ -66,9 +91,9 @@ section {
   text-align: center;
   background-color: #e72f8411;
 
-  height: 100vh;
+  min-height: 100vh;
 
-  padding: 5em;
+  padding: 7em 5em 0em;
   margin-bottom: 1vh;
 }
 
