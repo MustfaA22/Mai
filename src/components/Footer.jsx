@@ -14,26 +14,28 @@ function Footer() {
         <img 
           src={maiWhiteLogo} 
           alt="mai logo" 
-          style={{ width: "160px", height: "auto", margin: "0 15px", display: "block", objectFit: "contain" }}
+          className={classes.logo}
         />
 
         <a href="https://iotkidsiq.com/" target="_blank" rel="noreferrer">
           <img 
             src={iotKidsLogo} 
             alt="iot kids logo" 
-            style={{ width: "160px", height: "auto", margin: "0 15px", display: "block", objectFit: "contain" }}
+            className={`${classes.logo} ${classes.iotLogo}`}
           />
         </a>
 
-        <div className="social" style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "1em" }}>
+        <div className={classes.social}
+
+        >
           <a href="https://www.facebook.com/IoTKIDS/" target="_blank" rel="noreferrer">
-            <BiLogoFacebookCircle style={{ width: "56px", height: "auto", color: "#fff" }} />
+            <BiLogoFacebookCircle className={classes.socialsIcon} />
           </a>
           <a href="#" target="_blank" rel="noreferrer">
-            <IoLogoWhatsapp style={{ width: "56px", height: "auto", color: "#fff" }} />
+            <IoLogoWhatsapp className={classes.socialsIcon} />
           </a>
           <a href="https://www.instagram.com/iotkids/" target="_blank" rel="noreferrer">
-            <AiFillInstagram style={{ width: "56px", height: "auto", color: "#fff" }} />
+            <AiFillInstagram className={classes.socialsIcon} />
           </a>
         </div>
 

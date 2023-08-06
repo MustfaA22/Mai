@@ -21,9 +21,50 @@
     gap: 14em;
 }
 
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin: 0 15px;
+    display: block;
+    object-fit: contain;
+}
+
+
+.social {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.socialsIcon {
+    width: 55px;
+    height: auto;
+    color: #fff;
+}
+
 .rightsReservedText {
     text-align: center;
     color: var(--white);
 
     padding-bottom: 1em;
+}
+
+@media only screen and (max-width: 650px) {
+    .logos {
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    .logos img {
+        width: auto;
+        height: 110px;
+
+    }
+
+    .iotLogo {
+        margin-bottom: 16px;
+    }
 }
