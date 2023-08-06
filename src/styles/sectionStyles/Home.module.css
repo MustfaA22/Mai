@@ -28,7 +28,7 @@
 /* .titleAndParagraph {} */
 
 .titleAndParagraph h1 {
-    font-size: 4.2rem;
+    font-size: 3.8rem;
     color: var(--purple);
 }
 
@@ -48,4 +48,35 @@
     font-weight: 400;
 
     color: #444;
+}
+
+@media only screen and (max-width: 650px) {
+    .background {
+        display: none;
+    }
+
+    .logo img {
+        width: auto;
+    }
+
+    .contentWrapper {
+        flex-direction: column;
+    }
+
+    .logo img {
+        margin: 0;
+    }
+
+    .titleAndParagraph h1 {
+        font-size: 3.2rem;
+    }
+
+    .titleAndParagraph p {
+        font-size: 2.8rem;
+    }
+
+    .titleAndParagraph .programInfo {
+        width: auto;
+        font-size: 1.8rem;
+    }
 }
