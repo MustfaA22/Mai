@@ -76,17 +76,17 @@ function ProgramContent() {
               <h3> ورش عمل </h3>
             </div>
 
-            <img src={secondArrowIcon} alt="arrow" />
+            <img src={secondArrowIcon} alt="arrow" className={classes.arrow} />
             
             <div className={classes.interactiveContentGraphItem}>
               <img src={activitiesIcon} alt="activities" />
               <h3> انشطة تفاعلية </h3>
             </div>
 
-            <img src={firstArrowIcon} alt="arrow" />
+            <img src={firstArrowIcon} alt="arrow" className={classes.arrow}/>
 
             <div className={classes.interactiveContentGraphItem}>
-              <img src={educationalContentIcon} alt="educational content" />
+              <img src={educationalContentIcon} alt="educational content"  />
               <h3>مُحتوى تعليمي</h3>
             </div>
           </div>

@@ -56,7 +56,7 @@
 }
 
 .skill p {
-    width: 25ch;
+    max-width: 25ch;
     font-size: 1.8rem;
 }
 
@@ -96,4 +96,39 @@
     justify-content: center;
     align-items: center;
     gap: 1em;
+}
+
+@media only screen and (max-width: 650px) {
+    .programContentInfo {
+        font-size: 2rem;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .skills {
+        flex-direction: column-reverse;
+    }
+
+    .skill {
+        width: auto;
+    }
+
+    .skillLogo {
+        width: 60px;
+    }
+
+    .interactiveContentGraph {
+        flex-direction: column-reverse;
+        padding: 2em 2em;
+    }
+
+    .interactiveContentGraphItem {
+        min-width: 8em;
+    }
+
+    .arrow {
+        rotate: 270deg;
+    }
 }
