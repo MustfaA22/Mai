@@ -11,6 +11,7 @@
   --white: #f6f6f6;
   --gray-background: #eeeeee;
   --purple: #5d378c;
+  --dark-purple: #7747b2;
   --pink: #e72f84;
   --dark-pink: #ba296d;
 }
@@ -24,6 +25,7 @@
   padding: 0;
   font: inherit;
   font-size: 1.6rem;
+  /* outline: 1px lightgreen solid; */
 }
 
 html {
@@ -36,6 +38,8 @@ p, h1, h2, h3, a {
 
 body {
   font-family: 'Noto Sans Arabic', sans-serif;
+  font-weight: normal;
+  font-style: normal;
   line-height: 1.5;
 }
 
@@ -56,19 +60,19 @@ h1 {
 }
 
 h2 {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   line-height: 1.1;
   font-weight: 500;
 }
 
 h3 {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   line-height: 1.1;
   font-weight: 400;
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 400;
 
   color: #444;
@@ -89,12 +93,34 @@ button {
 
 section {
   text-align: center;
-  background-color: #e72f8411;
+  /* background-color: #e72f8411; */
 
   min-height: 100vh;
 
   padding: 6em 5em 0em;
   margin-bottom: 1vh;
+
+  position: relative;
+}
+
+@media only screen and (max-width: 650px) {
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+
+  section {
+    padding: 4em 2em 0em;
+  }
 }
 
 /* width */
