@@ -40,7 +40,7 @@ function Navbar() {
         <div className={classes.logo}>
           <img 
             src={logo} 
-            style={{width: "70px", objectFit: "contain", objectPosition: "center"}} 
+            style={{width: "60px", objectFit: "contain", objectPosition: "center"}} 
             alt="logo"
             onClick={handlerClickLogo}
           />

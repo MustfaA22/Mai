@@ -1,12 +1,11 @@
 .navbar {
     width: 100%;
-    min-height: 5em;
+    min-height: 4.8em;
     background-color: var(--purple);
 
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1em 2em;
 
     z-index: 10;
 
@@ -42,4 +41,22 @@
 .links button.active {
     color: var(--pink);
     text-shadow: var(--pink) 0px 0px 2px;
+}
+
+@media only screen and (max-width: 650px) {
+    .navbar {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .links {
+        gap: 1em;
+    }
+
+    .links button {
+        font-size: 1.6rem;
+    }
 }
