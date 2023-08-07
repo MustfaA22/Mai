@@ -11,6 +11,7 @@ TODO:
 -  create all the in-between sections (DONE. except the the sponsors section) 🔴
 -  everything should be responsive (DONE. except the navbar) 🟡
 -  add more animation to the website (use a library) 🟡
+-  header (background image in home section) should be changed 🟡
 -  use the right font "maiandra" (mustfa) 🔵
 -  (in footer) make sure that whatsapp logo have a link 🔵
 -  (in footer) make sure that you have a better ux (like having an animation or something on hover) 🔵
