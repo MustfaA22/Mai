@@ -31,7 +31,7 @@
 
 .contentWrapper img {}
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 800px) {
     .contentWrapper {
         flex-direction: column;
         gap: 3em;

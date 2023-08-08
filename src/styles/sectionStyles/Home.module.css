@@ -50,7 +50,7 @@
     color: #444;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 800px) {
     .background {
         display: none;
     }
@@ -60,7 +60,10 @@
     }
 
     .contentWrapper {
+        margin-top: 4em;
         flex-direction: column;
+        justify-content: start;
+        gap: 5em;
     }
 
     .logo img {

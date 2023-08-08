@@ -103,7 +103,7 @@ section {
   position: relative;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 800px) {
 
   h1 {
     font-size: 2.8rem;
@@ -119,7 +119,7 @@ section {
 
 
   section {
-    padding: 4em 2em 0em;
+    padding: 5em 2em 0em;
   }
 }
 

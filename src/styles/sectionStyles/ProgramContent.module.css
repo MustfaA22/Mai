@@ -98,7 +98,7 @@
     gap: 1em;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 800px) {
     .programContentInfo {
         font-size: 2rem;
     }
