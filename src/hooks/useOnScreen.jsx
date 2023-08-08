@@ -6,12 +6,11 @@ export const useOnScreen = (ref) => {
     const observer = new IntersectionObserver((([entry]) => {
         setIsOnScreen(entry.isIntersecting);
     }), {
-        threshold: 0.7,
+        threshold: 0.4,
     })
 
     useEffect(() => {
         observer.observe(ref.current);
-
         return () => observer.disconnect();
     })
 
