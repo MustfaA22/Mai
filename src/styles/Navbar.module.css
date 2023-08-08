@@ -18,6 +18,16 @@
     cursor: pointer;
 }
 
+.logo img {
+    width: 60px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.mobileNavToggle {
+    display: none;
+}
+
 .links {
     list-style-type: none;
     display: flex;
@@ -37,23 +47,73 @@
     outline: none;
 }
 
-
 .links button.active {
     color: var(--pink);
     text-shadow: var(--pink) 0px 0px 2px;
 }
 
-@media only screen and (max-width: 650px) {
+.close {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
     .navbar {
-        display: none;
+        min-height: 3.8em;
     }
 
     .logo {
-        display: none;
+        left: 30px;
+    }
+
+    .logo img {
+        width: 50px;
     }
 
     .links {
+        position: fixed;
+        inset: 0 0 0 30%;
+        flex-direction: column-reverse;
+        padding: 0rem 4rem 50vh;
         gap: 1em;
+
+        z-index: 1000;
+        background-color: #5d378c86;
+        backdrop-filter: blur(3rem);
+
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+
+        font-size: 2.4rem;
+    }
+
+    .links[data-visible="true"] {
+        transform: translateX(0%);
+    }
+
+    .mobileNavToggle {
+        display: block;
+        position: absolute;
+        top: 1.6rem;
+        right: 3rem;
+
+        z-index: 1;
+
+        width: 3rem;
+        aspect-ratio: 1;
+    }
+
+    .mobileNavToggle img {
+        /* color: #fff; */
+        z-index: 0;
+    }
+
+    .close {
+        display: block;
+        position: absolute;
+        width: 4rem;
+        top: 3rem;
+        right: 3rem;
+        color: #fff;
     }
 
     .links button {
