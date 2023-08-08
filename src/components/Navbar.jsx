@@ -3,9 +3,6 @@ import logo from "../assets/images/logo.svg";
 import { useContext } from "react";
 import { NavContext } from "../context/NavContext";
 
-// const navLinks = ["home", "program-aspects", "goals", "who-are-we", "contact-us"];
-// const navLinksContent = [, "جوانب البرنامج", "الاهداف", "من نحن", "تواصل معنا"];
-
 const navLinks = ["sponsors", "contest", "register-now", "program-content", "home"];
 const navLinksContent = ["الرعاة", "المسابقة", "سجل الان", "محتوى البرنامج", "الصفحة الرئيسية"];
 
