@@ -12,7 +12,7 @@ function Contest() {
       <div className={classes.center}>
         <div className={classes.contentWrapper}>
           <div className={classes.textAndButton}>
-            <h1> المنافسة </h1>
+            <h1> المسابقة </h1>
             <p>
               هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى. هذا النص العربي هو مثال.
             </p>
