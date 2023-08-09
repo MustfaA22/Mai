@@ -10,11 +10,9 @@ TODO:
 
 -  everything should be responsive (DONE. except for ipads) 🟡
 
--  add more animation to the website (use a library) 🟡
+-  add more animation to the website (use a library for animation) 🟡
 
 -  (in footer) make sure that you have a better ux (like having an animation or something on hover) 🔵
-
--  meta tags for SEO and social media link sharing 🔵
 
 -  (in footer) make sure that whatsapp logo have a link (mustfa) 🔵
 -  use the right font "maiandra" (mustfa) 🔵
