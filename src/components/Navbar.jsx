@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { NavContext } from "../context/NavContext";
 
 import classes from "../styles/Navbar.module.css";
-import logo from "../assets/images/logo.svg";
+import logo from "../assets/images/logo-white.svg";
 import menu from "../assets/images/burger-bar.svg";
 import close from "../assets/images/close.svg";
 

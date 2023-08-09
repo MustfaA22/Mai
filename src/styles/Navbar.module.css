@@ -49,7 +49,6 @@
 
 .links button.active {
     color: var(--pink);
-    text-shadow: var(--pink) 0px 0px 2px;
 }
 
 .close {
