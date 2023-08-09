@@ -1,0 +1,49 @@
+.container {
+    min-height: 75vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.container p {
+    max-width: 45ch;
+    height: 5em;
+}
+
+.sponsors {
+    display: flex;
+    gap: 6em;
+}
+
+.sponsor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.sponsor img {
+    height: 300px;
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        gap: 1em;
+    }
+
+    .container p {
+        font-size: 1.6rem;
+    }
+
+    .sponsors {
+        flex-direction: column-reverse;
+        gap: 2em;
+    }
+
+    .sponsor img {
+        height: 20vh;
+    }
+}
