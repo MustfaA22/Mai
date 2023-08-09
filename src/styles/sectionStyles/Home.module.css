@@ -19,7 +19,7 @@
     align-items: center;
 }
 
-.logo img {
+.navbarLogo {
     width: 300px;
     height: auto;
     margin-left: 12em;
@@ -32,7 +32,7 @@
     color: var(--purple);
 }
 
-.titleAndParagraph p {
+.secondaryTitle {
     margin-top: .4em;
 
     font-size: 3rem;
@@ -41,13 +41,8 @@
     color: var(--purple);
 }
 
-.titleAndParagraph .programInfo {
+.programInfo {
     width: 45ch;
-
-    font-size: 2rem;
-    font-weight: 400;
-
-    color: #444;
 }
 
 @media only screen and (max-width: 800px) {

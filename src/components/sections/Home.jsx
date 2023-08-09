@@ -13,11 +13,11 @@ function HomeSection() {
       <img src={header} alt="background" className={classes.background}/>
       <div className={classes.contentWrapper}>
         <div className={classes.logo}>
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" className={classes.navbarLogo} />
         </div>
         <div className={classes.titleAndParagraph}>
           <h1> برنامج مي الشواف </h1>
-          <p> لتمكين الفتيات في مجال التكنولوجيا </p>
+          <p className={classes.secondaryTitle}> لتمكين الفتيات في مجال التكنولوجيا </p>
           <p className={classes.programInfo}>
             هو برنامج تدريبي يهدف إلى تمكين الفتيات في الفئة العمرية من 8 إلى 14 سنة من استخدام التكنولوجيا بشكل صحيح وزيادة وعيهن في مجال التكنولوجيا، وتشجيعهن على الاستكشاف والابتكار وبناء مستقبل واعد في مجالات العلوم والتكنولوجيا. يتم تمويل البرنامج من السيد خالد الخالدي وتنفيذه بواسطة مركز IoT KIDS.
           </p>
