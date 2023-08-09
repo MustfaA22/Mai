@@ -8,19 +8,20 @@
 
 TODO:
 
--  create all the in-between sections (DONE. except the the sponsors section) 🔴
 -  everything should be responsive (DONE. except for ipads) 🟡
+
 -  add more animation to the website (use a library) 🟡
 
--  (in footer) make sure that whatsapp logo have a link 🔵
 -  (in footer) make sure that you have a better ux (like having an animation or something on hover) 🔵
 
 -  meta tags for SEO and social media link sharing 🔵
 
+-  (in footer) make sure that whatsapp logo have a link (mustfa) 🔵
 -  use the right font "maiandra" (mustfa) 🔵
 
 DONE:
 
+-  create all the in-between sections 🟢
 -  header (background image in home section) should be changed (I'm not happy with the outcome) 🟢
 -  the title and the icon on the browser tab 🟢
 -  setup the project 🟢
