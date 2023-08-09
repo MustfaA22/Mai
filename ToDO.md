@@ -18,6 +18,7 @@ TODO:
 
 -  (in footer) make sure that whatsapp logo have a link (mustfa) 🔵
 -  use the right font "maiandra" (mustfa) 🔵
+-  in the index.html file you need to fill two meta tags (og:url) and (og:image) 🔵
 
 DONE:
 
