@@ -29,12 +29,27 @@
     margin-bottom: 1.5em;
 }
 
-.contentWrapper img {}
+.contentWrapper img {
+    width: 40%;
+}
 
-@media only screen and (max-width: 800px) {
+/* Phones */
+@media only screen and (max-width: 650px) {
     .contentWrapper {
         flex-direction: column;
         gap: 3em;
+    }
+
+    .contentWrapper img {
+        width: 70%;
+    }
+}
+
+/* Ipads */
+@media only screen and (max-width: 1200px) {
+    .contentWrapper {
+        flex-direction: column-reverse;
+        gap: 5em;
     }
 
     .contentWrapper img {

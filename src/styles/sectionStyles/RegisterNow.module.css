@@ -18,7 +18,7 @@
 }
 
 .contentWrapper img {
-    width: 30%;
+    width: 25%;
 }
 
 .likeImg {
@@ -37,8 +37,12 @@
 
 }
 
-@media only screen and (max-width: 800px) {
+/* Phones */
+@media only screen and (max-width: 650px) {
     .likeImg, .registerNowImg {
         display: none;
     }
 }
+
+/* Ipads */
+@media only screen and (max-width: 1200px) {}

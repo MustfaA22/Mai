@@ -29,13 +29,30 @@
     height: 300px;
 }
 
-@media only screen and (max-width: 800px) {
+/* Phones */
+@media only screen and (max-width: 650px) {
     .container {
         gap: 1em;
     }
 
     .container p {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
+    }
+
+    .sponsors {
+        flex-direction: column-reverse;
+        gap: 1em;
+    }
+
+    .sponsor img {
+        height: 20vh;
+    }
+}
+
+/* Ipads */
+@media only screen and (max-width: 1200px) {
+    .container p {
+        font-size: 1.8rem;
     }
 
     .sponsors {
@@ -43,7 +60,12 @@
         gap: 2em;
     }
 
+    .sponsor {
+        gap: 1em;
+    }
+
     .sponsor img {
-        height: 20vh;
+        width: 40%;
+        height: auto;
     }
 }

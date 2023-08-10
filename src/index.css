@@ -103,29 +103,6 @@ section {
   position: relative;
 }
 
-@media only screen and (max-width: 800px) {
-
-  h1 {
-    font-size: 2.8rem;
-  }
-
-  h2 {
-    font-size: 2.4rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-
-  p {
-    font-size: 1.6rem;
-  }
-
-
-  section {
-    padding: 5em 2em 0em;
-  }
-}
 
 /* width */
 ::-webkit-scrollbar {
@@ -146,3 +123,30 @@ section {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--dark-pink);
 }
+
+/* Phones */
+@media only screen and (max-width: 650px) {
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  section {
+    padding: 5em 2em 0em;
+  }
+}
+
+/* Ipads */
+@media only screen and (max-width: 1200px) {}

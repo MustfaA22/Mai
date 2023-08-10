@@ -45,13 +45,15 @@
     width: 45ch;
 }
 
-@media only screen and (max-width: 800px) {
+/* Phones */
+@media only screen and (max-width: 1200px) {
     .background {
         display: none;
     }
 
     .logo img {
         width: auto;
+        margin: 0;
     }
 
     .contentWrapper {
@@ -59,10 +61,6 @@
         flex-direction: column;
         justify-content: start;
         gap: 5em;
-    }
-
-    .logo img {
-        margin: 0;
     }
 
     .titleAndParagraph h1 {
@@ -78,3 +76,35 @@
         font-size: 1.8rem;
     }
 }
+
+/* Ipads */
+/* @media only screen and (max-width: 1200px) {
+    .background {
+        display: none;
+    }
+
+    .logo img {
+        width: auto;
+        margin: 0;
+    }
+
+    .contentWrapper {
+        margin-top: 3em;
+        flex-direction: column;
+        justify-content: start;
+        gap: 5em;
+    }
+
+    .titleAndParagraph h1 {
+        font-size: 3.2rem;
+    }
+
+    .titleAndParagraph p {
+        font-size: 2.8rem;
+    }
+
+    .titleAndParagraph .programInfo {
+        width: auto;
+        font-size: 1.8rem;
+    }
+} */

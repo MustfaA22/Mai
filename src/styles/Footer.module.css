@@ -52,7 +52,8 @@
     padding-bottom: 1em;
 }
 
-@media only screen and (max-width: 800px) {
+/* Phones */
+@media only screen and (max-width: 650px) {
     .logos {
         flex-direction: column;
         gap: 3em;
@@ -61,10 +62,21 @@
     .logos img {
         width: auto;
         height: 110px;
-
     }
 
     .iotLogo {
         margin-bottom: 16px;
+    }
+}
+
+/* Ipads */
+@media only screen and (max-width: 1200px) {
+    .logos {
+        gap: 3em;
+    }
+
+    .logos img {
+        width: auto;
+        height: 110px;
     }
 }
