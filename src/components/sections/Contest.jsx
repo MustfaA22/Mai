@@ -2,23 +2,39 @@ import { useNav } from "../../hooks/useNav";
 import competition from "../../assets/images/competition/competition.png";
 import classes from "../../styles/sectionStyles/Contest.module.css";
 import Button from "../../UI/Button";
+import Lottie from "lottie-web";
+import comp from "../../assets/images/comp.json"
+import { useEffect } from "react";
 
 
 function Contest() {
   const contestRef = useNav();
 
+  useEffect(()=>{
+    const animation1= Lottie.loadAnimation({
+      container: document.getElementById("comp"),
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      animationData: comp,
+    });
+    return (()=>{
+      animation1.destroy();
+    })
+  },[])
+
   return (
     <section ref={contestRef} id="contest">
       <div className={classes.center}>
         <div className={classes.contentWrapper}>
-          <div className={classes.textAndButton}>
+          <div data-aos="fade-right" data-aos-duration="3000" className={classes.textAndButton}>
             <h1> المسابقة </h1>
             <p>
               هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى. هذا النص العربي هو مثال.
             </p>
             <Button buttonText={"سَجلي اﻵن"} />
           </div>
-            <img src={competition} alt="competition" />
+           <div data-aos="fade-left" data-aos-duration="3000" id="comp"></div>
         </div>
       </div>
     </section>

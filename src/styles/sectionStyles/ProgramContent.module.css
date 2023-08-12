@@ -11,6 +11,7 @@
 
 .programContentInfo {
     font-size: 2.4rem;
+    
 }
 
 .skillsWrapper {
@@ -30,7 +31,14 @@
 }
 
 .logo {
-    width: 90px;
+    width: 400px;
+    padding-top: -5rem;
+}
+.interacivelearn{
+    width: 300px;
+}
+.edulogo{
+    width:100px;
 }
 
 .skills {
@@ -61,7 +69,18 @@
 }
 
 .skillLogo {
-    width: 75px;
+    width: 255px;
+   
+}
+.skillLogocode {
+    width: 130px;
+   
+}
+.skillLogoAI {
+    width: 100px;
+    padding-top: 3.5rem;
+    padding-bottom: 1rem;
+   
 }
 
 .interactiveContent {

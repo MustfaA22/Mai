@@ -12,10 +12,10 @@ function HomeSection() {
     <section ref={homeRef} id="home" className={classes.home}>
       <img src={header} alt="background" className={classes.background}/>
       <div className={classes.contentWrapper}>
-        <div className={classes.logo}>
+        <div data-aos="fade-right" data-aos-duration="3000" className={classes.logo}>
           <img src={logo} alt="logo" className={classes.navbarLogo} />
         </div>
-        <div className={classes.titleAndParagraph}>
+        <div data-aos="fade-left" data-aos-duration="2000" className={classes.titleAndParagraph}>
           <h1> برنامج مي الشواف </h1>
           <p className={classes.secondaryTitle}> لتمكين الفتيات في مجال التكنولوجيا </p>
           <p className={classes.programInfo}>

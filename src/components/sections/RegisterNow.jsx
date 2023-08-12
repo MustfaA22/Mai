@@ -11,7 +11,7 @@ function RegisterNow() {
   const registerNowRef = useNav();
 
   return (
-    <section ref={registerNowRef} id="register-now">
+    <section data-aos="fade-up" data-aos-duration="3000" ref={registerNowRef} id="register-now">
       <div className={classes.contentWrapper}>
         <img src={likeImg} className={classes.likeImg} alt="" />
         <img src={registerNowImg} className={classes.registerNowImg} alt="" />
