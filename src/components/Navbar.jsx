@@ -7,7 +7,7 @@ import menu from "../assets/images/burger-bar.svg";
 import close from "../assets/images/close.svg";
 import enimg from "../assets/images/en.png"
 import arimg from "../assets/images/ar.png" 
-
+ 
 const navLinks = ["sponsors", "contest", "register-now", "program-content", "home"];
 const navLinksContentAR = ["الرعاة", "المسابقة", "سجل الان", "محتوى البرنامج", "الصفحة الرئيسية"];
 const navLinksContentEn = ["Sponsors", "Competition", "Registeration", "Program Content", "Home"];
