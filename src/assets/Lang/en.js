@@ -19,7 +19,7 @@ const en ={
     "register-desc":"And start your Journey in the Field of Technology",
     "comp-title":"Competition",
     "comp-desc":"After the completion of the training period and the girls' acquisition of understanding  programming and artificial intelligence basics, this will enable them to create pioneering projects that target solutions to problems facing the globe. After that, a central ceremony will be organized to announce the best 3 projects and honor them with valuable prizes offered by Mr. Khaled Al-Khalidi and the IoT Kids",
-    "sponsors-title":"Sponsors",
+    "sponsors-title":"Sponsors", 
     "sponsors-desc":"The “May Al Shawaf” Program is Funded by Mr. Khaled Al-Khalidi in Honor of the Spirit of May Al Shawaf, who Believes in the Importance of Supporting Technology Education for Girls and Empowering them in the Fields of Science and Technology.",
     "sponsors-desc-2":"The Program is Implemented by the IoT KIDS Center, which is a Center Specialized in Providing Educational and training Programs in the Fields of Technology and Innovation."
 
