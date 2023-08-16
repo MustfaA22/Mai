@@ -13,7 +13,7 @@ const navLinksContentAR = ["الرعاة", "المسابقة", "سجل الان"
 const navLinksContentEn = ["Sponsors", "Competition", "Registeration", "Program Content", "Home"];
 const lang =localStorage.getItem("lang")|| "ar"
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); 
   const langChange = (option) => {
     localStorage.setItem("lang", option);
     window.location.reload();
