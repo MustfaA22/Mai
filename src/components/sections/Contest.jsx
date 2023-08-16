@@ -30,8 +30,8 @@ function Contest() {
         <div className={classes.contentWrapper}>
           <div data-aos="fade-right" data-aos-duration="3000" className={classes.textAndButton}>
             <h1>{i18next.t("comp-title")}</h1>
-            <p>
-              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى. هذا النص العربي هو مثال.
+            <p className="fw-bold">
+              {i18next.t("comp-desc")}
             </p>
             <Button buttonText={i18next.t("register-title")} />
           </div>
