@@ -11,7 +11,7 @@ import arimg from "../assets/images/ar.png"
 const navLinks = ["sponsors", "contest", "register-now", "program-content", "home"];
 const navLinksContentAR = ["الرعاة", "المسابقة", "سجل الان", "محتوى البرنامج", "الصفحة الرئيسية"];
 const navLinksContentEn = ["Sponsors", "Competition", "Registeration", "Program Content", "Home"];
-
+const lang =localStorage.getItem("lang")|| "ar"
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const langChange = (option) => {
@@ -38,7 +38,7 @@ function Navbar() {
           <button 
             onClick={handleClickNav} 
             className={activeLinkId === content ? classes.active : ""}
-            > { localStorage.getItem("lang")=="ar"? navLinksContentAR[i]:navLinksContentEn[i]} </button>
+            > { lang=="ar"? navLinksContentAR[i]:navLinksContentEn[i]} </button>
         </li>
         
       </ul>
