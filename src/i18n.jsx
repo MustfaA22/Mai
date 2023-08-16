@@ -1,7 +1,7 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import common_en from "./assets/Lang/en.json"
-import common_ar from "./assets/lang/ar.json";
+import common_en from "./assets/Lang/en.js"
+import common_ar from "./assets/Lang/ar.js"
 import LanguageDetector from "i18next-browser-languagedetector";
 
 const resources = {

@@ -21,6 +21,7 @@ import educa from "../../assets/images/educa.json"
 import workshops from "../../assets/images/workshops.json"
 import active from "../../assets/images/activity.json"
 import Lottie from "lottie-web";
+import i18next from "i18next";
 
 
 
@@ -100,35 +101,35 @@ const ProgramContent=()=> {
     <section ref={programContentRef} id="program-content">
       <div className={classes.contentWrapper}>
         <div data-aos="fade-up" data-aos-duration="2000">
-          <h1>مُحتوى البرنامج</h1>
+          <h1>{i18next.t("title-content")}</h1>
           <p className={classes.programContentInfo}>
-            يهدف البرنامج الى تعليم الفتيات مهارات جديدة وزيادة قدراتهن في مجال التكنولوجيا
+           {i18next.t("title-content-desc")}
           </p>
         </div>
         <div data-aos="fade-up" data-aos-duration="3000" className={classes.skillsWrapper}>
           <div className={classes.logoAndTitle}>
             <div className={classes.logo} id="skills">
             </div>
-            <h2>مهارات جديدة</h2>
+            <h2>{i18next.t("new-skills-title")}</h2>
           </div>
           <div className={classes.skills}>
           <div data-aos="fade-right" data-aos-duration="3000" className={classes.skill}>
                 <div  className={classes.skillLogocode} id="coding">
                 </div>
-                <h3> البرمجة </h3>
-                <p> تعليم لغات البرمجة المبسطة مثل Scratch </p>
+                <h3>{i18next.t("prog-title")}</h3>
+                <p>{i18next.t("prog-desc")}</p>
               </div>
               <div data-aos="fade-up" data-aos-duration="3000" className={classes.skill}>
                 <div className={classes.skillLogo} id="robots">
                 </div>
-                <h3> الروبتكس </h3>
-                <p> تعليم الفتيات كيفية برمجة الروبوتات على منصات مثل Arduino</p>
+                <h3>{i18next.t("robo-title")}</h3>
+                <p>{i18next.t("robo-desc")}</p>
               </div>
               <div data-aos="fade-left" data-aos-duration="3000" className={classes.skill}>
                 <div className={classes.skillLogoAI} id="AI">
                 </div>
-                <h3> الذكاء الاصطناعي </h3>
-                <p> مقدمة الى الذكاء الاصطناعي وكيفية استخدامه في مشاريع"</p>
+                <h3>{i18next.t("ai-title")}</h3>
+                <p> {i18next.t("ai-desc")}</p>
               </div>
               
           </div>
@@ -137,28 +138,28 @@ const ProgramContent=()=> {
         <div data-aos="fade-up" data-aos-duration="3000" className={classes.interactiveContent}>
           <div className={classes.logoAndTitle}>
             <div className={classes.interacivelearn} alt="interactive content" id="interactive"></div>
-            <h2> مُحتوى تفاعُلي </h2>
+            <h2>{i18next.t("content-title-interactive")}</h2>
           </div>
 
           <div className={classes.interactiveContentGraph}>
 
             <div data-aos="fade-right" data-aos-duration="3000" className={classes.interactiveContentGraphItem}>
               <div className={classes.edulogo} id="workshop"></div>
-              <h3> ورش عمل </h3>
+              <h3>{i18next.t("content-workshops-title")}</h3>
             </div>
 
             <img src={secondArrowIcon} alt="arrow" className={classes.arrow} />
             
             <div data-aos="fade-up" data-aos-duration="3000" className={classes.interactiveContentGraphItem}>
               <div className={classes.edulogo} id="activity"></div>
-              <h3> انشطة تفاعلية </h3>
+              <h3>{i18next.t("content-acivity-title")}</h3>
             </div>
 
             <img src={firstArrowIcon} alt="arrow" className={classes.arrow}/>
 
             <div data-aos="fade-left" data-aos-duration="3000" className={classes.interactiveContentGraphItem}>
             <div className={classes.edulogo} id="educ"></div>
-              <h3>مُحتوى تعليمي</h3>
+              <h3>{i18next.t("contnet-edu-title")}</h3>
             </div>
           </div>
 

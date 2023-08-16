@@ -5,6 +5,7 @@ import Button from "../../UI/Button";
 import Lottie from "lottie-web";
 import comp from "../../assets/images/comp.json"
 import { useEffect } from "react";
+import i18next from "i18next";
 
 
 function Contest() {
@@ -28,11 +29,11 @@ function Contest() {
       <div className={classes.center}>
         <div className={classes.contentWrapper}>
           <div data-aos="fade-right" data-aos-duration="3000" className={classes.textAndButton}>
-            <h1> المسابقة </h1>
+            <h1>{i18next.t("comp-title")}</h1>
             <p>
               هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى. هذا النص العربي هو مثال.
             </p>
-            <Button buttonText={"سَجلي اﻵن"} />
+            <Button buttonText={i18next.t("register-title")} />
           </div>
            <div data-aos="fade-left" data-aos-duration="3000" id="comp"></div>
         </div>

@@ -43,7 +43,14 @@ p, h1, h2, h3, a {
   direction: rtl;
 }
 
-body {
+body:lang(ar) {
+  font-family: 'Tajawal',
+  sans-serif !important;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5;
+}
+body:lang(en) {
   font-family: 'Tajawal',
   sans-serif !important;
   font-weight: normal;

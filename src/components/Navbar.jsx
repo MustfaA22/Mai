@@ -9,13 +9,15 @@ import enimg from "../assets/images/en.png"
 import arimg from "../assets/images/ar.png"
 
 const navLinks = ["sponsors", "contest", "register-now", "program-content", "home"];
-const navLinksContent = ["الرعاة", "المسابقة", "سجل الان", "محتوى البرنامج", "الصفحة الرئيسية"];
+const navLinksContentAR = ["الرعاة", "المسابقة", "سجل الان", "محتوى البرنامج", "الصفحة الرئيسية"];
+const navLinksContentEn = ["Sponsors", "Competition", "Registeration", "Program Content", "Home"];
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const langChange = (option) => {
     localStorage.setItem("lang", option);
     window.location.reload();
+    window.scrollTo(0,0)
   }
   const { activeLinkId } = useContext(NavContext);
   
@@ -36,7 +38,7 @@ function Navbar() {
           <button 
             onClick={handleClickNav} 
             className={activeLinkId === content ? classes.active : ""}
-            > {navLinksContent[i]} </button>
+            > { localStorage.getItem("lang")=="ar"? navLinksContentAR[i]:navLinksContentEn[i]} </button>
         </li>
         
       </ul>

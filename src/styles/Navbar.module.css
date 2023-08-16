@@ -1,4 +1,4 @@
-.navbar {
+.navbar:lang(en) {
     width: 100%;
     min-height: 4.8em;
     background-color: var(--purple);
@@ -7,7 +7,21 @@
     display: flex;
     align-items: center !important;
     justify-content: center;
+    direction: rtl;
+    z-index: 10;
 
+    position: fixed;
+}
+.navbar:lang(ar) {
+    width: 100%;
+    min-height: 4.8em;
+    background-color: var(--purple);
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+    display: flex;
+    align-items: center !important;
+    justify-content: center;
+    direction: ltr;
     z-index: 10;
 
     position: fixed;

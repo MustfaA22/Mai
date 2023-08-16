@@ -5,6 +5,7 @@ import Button from "../../UI/Button";
 
 import likeImg from "../../assets/images/positive-vote-1.png";
 import registerNowImg from "../../assets/images/register-1.png";
+import i18next from "i18next";
 
 
 function RegisterNow() {
@@ -15,9 +16,9 @@ function RegisterNow() {
       <div className={classes.contentWrapper}>
         <img src={likeImg} className={classes.likeImg} alt="" />
         <img src={registerNowImg} className={classes.registerNowImg} alt="" />
-        <h1> سَجلي اﻵن! </h1>
-        <p> وأبدئي رحلتكِ في مجال التكنولوجيا </p>
-        <Button buttonText={"سَجلي اﻵن"} />
+        <h1>{i18next.t("register-title")}</h1>
+        <p>{i18next.t("register-desc")}</p>
+        <Button buttonText={i18next.t("register-title")} />
       </div>
     </section>
   )
