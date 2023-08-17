@@ -26,6 +26,7 @@
 
     position: fixed;
 }
+
 .flags{
     width: 40px;
     position: absolute;
@@ -71,6 +72,7 @@
 
 .links button.active {
     color: var(--pink);
+    padding-left: 1rem;
 }
 
 .close {
