@@ -25,29 +25,35 @@ function Navbar() {
 
   return (
     <nav className={classes.navbar}>
-      {lang === "ar" ? (
-        <button className="d-flex" onClick={() => langChange("en")}>
-          <img className={classes.flags} src={enimg} alt="" />
-        </button>
-      ) : (
-        <button className="d-flex" onClick={() => langChange("ar")}>
-          <img className={classes.flags} src={arimg} alt="" />
-        </button>
-      )}
+      
 
       <button className={classes.mobileNavToggle} onClick={() => setIsOpen(true)}>
         <img src={menu} alt="menu" />
       </button>
+      <div className={classes.logo}>
+        <img src={logo} alt="logo" onClick={handlerClickLogo} />
+      </div>
       <div className={classes.links} data-visible={isOpen ? "true" : "false"}>
         <button onClick={() => setIsOpen(false)}>
           <img src={close} className={classes.close} />
         </button>
-
+        
         <ul className={classes.navLinksNav}>
+        <li>
+          {lang === "ar" ? (
+        <button className={classes.notactive}  onClick={() => langChange("en")}>
+         English
+        </button>
+      ) : (
+        <button className={classes.notactive} onClick={() => langChange("ar")}>
+          العربية
+        </button>
+      )}
+          </li>
           <li>
             <button
               onClick={() => document.getElementById("sponsors").scrollIntoView({ behavior: "smooth", block: "start" })}
-              className={activeLinkId === "sponsors" ? classes.active : ""}
+              className={activeLinkId === "sponsors" ? classes.active : classes.notactive}
             >
               {lang === "ar" ? "الرعاة" : "Sponsors"}
             </button>
@@ -55,7 +61,7 @@ function Navbar() {
           <li>
             <button
               onClick={() => document.getElementById("contest").scrollIntoView({ behavior: "smooth", block: "start" })}
-              className={activeLinkId === "contest" ? classes.active : ""}
+              className={activeLinkId === "contest" ? classes.active : classes.notactive}
             >
               {lang === "ar" ? "المسابقة" : "Competition"}
             </button>
@@ -63,7 +69,7 @@ function Navbar() {
           <li>
             <button
               onClick={() => document.getElementById("register-now").scrollIntoView({ behavior: "smooth", block: "start" })}
-              className={activeLinkId === "register-now" ? classes.active : ""}
+              className={activeLinkId === "register-now" ? classes.active : classes.notactive}
             >
               {lang === "ar" ? "سجل الان" : "Registeration"}
             </button>
@@ -71,7 +77,7 @@ function Navbar() {
           <li>
             <button
               onClick={() => document.getElementById("program-content").scrollIntoView({ behavior: "smooth", block: "start" })}
-              className={activeLinkId === "program-content" ? classes.active : ""}
+              className={activeLinkId === "program-content" ? classes.active : classes.notactive}
             >
               {lang === "ar" ? "محتوى البرنامج" : "Program Content"}
             </button>
@@ -79,17 +85,17 @@ function Navbar() {
           <li>
             <button
               onClick={() => document.getElementById("home").scrollIntoView({ behavior: "smooth", block: "start" })}
-              className={activeLinkId === "home" ? classes.active : ""}
+              className={activeLinkId === "home" ? classes.active : classes.notactive}
             >
               {lang === "ar" ? "الصفحة الرئيسية" : "Home"}
             </button>
           </li>
+         
         </ul>
-      </div>
 
-      <div className={classes.logo}>
-        <img src={logo} alt="logo" onClick={handlerClickLogo} />
       </div>
+     
+      
     </nav>
   );
 }

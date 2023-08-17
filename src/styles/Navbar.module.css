@@ -2,28 +2,22 @@
     width: 100%;
     min-height: 4.8em;
     background-color: var(--purple);
-    padding-top: 2.5rem;
-    padding-bottom: 3rem;
     display: flex;
     align-items: center !important;
     justify-content: center;
     direction: rtl;
     z-index: 10;
-
     position: fixed;
 }
 .navbar:lang(ar) {
     width: 100%;
     min-height: 4.8em;
     background-color: var(--purple);
-    padding-top: 2.5rem;
-    padding-bottom: 3rem;
     display: flex;
     align-items: center !important;
     justify-content: center;
     direction: ltr;
     z-index: 10;
-
     position: fixed;
 }
 
@@ -72,7 +66,11 @@
 
 .links button.active {
     color: var(--pink);
-    padding-left: 1rem;
+    padding-left: 3rem;
+}
+.links button.notactive {
+    
+    padding-left: 3rem;
 }
 
 .close {
@@ -81,13 +79,8 @@
 
 /* Phones */
 @media only screen and (max-width: 1200px) {
-    .navbar {
-        min-height: 3.8em;
-    }
-
-    .logo {
-        left: 30px;
-    }
+    
+    
     .flags{
         width: 40px;
         position: absolute;
