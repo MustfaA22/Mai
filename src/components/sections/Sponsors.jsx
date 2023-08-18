@@ -9,7 +9,7 @@ function Sponsors() {
 
   return (
     <section ref={sponsorsRef} id="sponsors">
-      <h1 style={{padding: "16px 0 0", fontSize: "4rem"}}>{i18next.t("sponsors-title")}</h1>
+      <h1 className={classes.comtitle}>{i18next.t("sponsors-title")}</h1>
       <div className={classes.container}>
         <div className={classes.sponsors}>
           <div data-aos="fade-right" data-aos-duration="3000" className={classes.sponsor}>

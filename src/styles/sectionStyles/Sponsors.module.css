@@ -1,6 +1,6 @@
 .container {
     min-height: 75vh;
-
+    margin-bottom: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,6 +37,7 @@
 
     .container p {
         font-size: 1.2rem;
+        
     }
 
     .sponsors {
@@ -48,16 +49,26 @@
         height: 20vh;
     }
 }
+.comtitle{
+    padding-top: 16px;
+     font-size: 4rem;
+}
 
 /* Ipads */
 @media only screen and (max-width: 1200px) {
     .container p {
         font-size: 1.8rem;
     }
-
+    .comtitle{
+        margin-top: 130px;
+         font-size: 4rem;
+    }
     .sponsors {
         flex-direction: column-reverse;
         gap: 2em;
+    }
+    .sponsor p{
+        margin-bottom: 20rem;
     }
 
     .sponsor {
