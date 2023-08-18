@@ -1,11 +1,14 @@
+.navAll{
+    display: flex;
+}
 .navbar:lang(en) {
     width: 100%;
     min-height: 4.8em;
     background-color: var(--purple);
     display: flex;
     align-items: center !important;
-    justify-content: center;
-    direction: rtl;
+    justify-content: space-between;
+    direction: ltr;
     z-index: 10;
     position: fixed;
 }
@@ -15,7 +18,7 @@
     background-color: var(--purple);
     display: flex;
     align-items: center !important;
-    justify-content: center;
+    justify-content: space-between;
     direction: ltr;
     z-index: 10;
     position: fixed;
@@ -82,33 +85,44 @@
     
     
     .flags{
-        width: 40px;
-        position: absolute;
-        left: 100px;
-        top: 10px;
+       
+    width: 40px;
+    position: absolute;
+    left: 20px;
+    top: 13px;
     }
 
     .logo img {
         width: 50px;
-        margin-top: .5rem;
+        display: none;
+        margin-top: 2rem;
     }
 
     .links {
         position: fixed;
         inset: 0 0 0 30%;
-        flex-direction: column-reverse;
-        padding: 0rem 4rem 50vh;
-        gap: 1em;
-
+        padding-top: 12rem;
         z-index: 1000;
         background-color: #5d378c86;
         backdrop-filter: blur(3rem);
-
         transform: translateX(100%);
         transition: transform 350ms ease-out;
-
         font-size: 2.4rem;
-    }
+      }
+      
+      .navLinksNav {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .navLinksNav li {
+        display: block;
+        margin-bottom: 1rem; /* Add margin between menu items */
+      }
+      
+      /* Your other styles for buttons and active/notactive classes */
+      
 
     .links[data-visible="true"] {
         transform: translateX(0%);

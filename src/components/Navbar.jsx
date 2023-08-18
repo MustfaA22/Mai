@@ -24,54 +24,31 @@ function Navbar() {
   };
 
   return (
+    <div className={classes.navAll}>
     <nav className={classes.navbar}>
       
-
-      <button className={classes.mobileNavToggle} onClick={() => setIsOpen(true)}>
-        <img src={menu} alt="menu" />
-      </button>
+     
       <div className={classes.logo}>
         <img src={logo} alt="logo" onClick={handlerClickLogo} />
       </div>
+      <div>
+      <button className={classes.mobileNavToggle} onClick={() => setIsOpen(true)}>
+        <img src={menu} alt="menu" />
+      </button>
+      </div>
+      
       <div className={classes.links} data-visible={isOpen ? "true" : "false"}>
         <button onClick={() => setIsOpen(false)}>
           <img src={close} className={classes.close} />
         </button>
-        
+       
         <ul className={classes.navLinksNav}>
         <li>
-          {lang === "ar" ? (
-        <button className={classes.notactive}  onClick={() => langChange("en")}>
-         English
-        </button>
-      ) : (
-        <button className={classes.notactive} onClick={() => langChange("ar")}>
-          العربية
-        </button>
-      )}
-          </li>
-          <li>
             <button
-              onClick={() => document.getElementById("sponsors").scrollIntoView({ behavior: "smooth", block: "start" })}
-              className={activeLinkId === "sponsors" ? classes.active : classes.notactive}
+              onClick={() => document.getElementById("home").scrollIntoView({ behavior: "smooth", block: "start" })}
+              className={activeLinkId === "home" ? classes.active : classes.notactive}
             >
-              {lang === "ar" ? "الرعاة" : "Sponsors"}
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => document.getElementById("contest").scrollIntoView({ behavior: "smooth", block: "start" })}
-              className={activeLinkId === "contest" ? classes.active : classes.notactive}
-            >
-              {lang === "ar" ? "المسابقة" : "Competition"}
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => document.getElementById("register-now").scrollIntoView({ behavior: "smooth", block: "start" })}
-              className={activeLinkId === "register-now" ? classes.active : classes.notactive}
-            >
-              {lang === "ar" ? "سجل الان" : "Registeration"}
+              {lang === "ar" ? "الصفحة الرئيسية" : "Home"}
             </button>
           </li>
           <li>
@@ -84,19 +61,49 @@ function Navbar() {
           </li>
           <li>
             <button
-              onClick={() => document.getElementById("home").scrollIntoView({ behavior: "smooth", block: "start" })}
-              className={activeLinkId === "home" ? classes.active : classes.notactive}
+              onClick={() => document.getElementById("register-now").scrollIntoView({ behavior: "smooth", block: "start" })}
+              className={activeLinkId === "register-now" ? classes.active : classes.notactive}
             >
-              {lang === "ar" ? "الصفحة الرئيسية" : "Home"}
+              {lang === "ar" ? "سجل الان" : "Registeration"}
             </button>
           </li>
+          <li>
+            <button
+              onClick={() => document.getElementById("contest").scrollIntoView({ behavior: "smooth", block: "start" })}
+              className={activeLinkId === "contest" ? classes.active : classes.notactive}
+            >
+              {lang === "ar" ? "المسابقة" : "Competition"}
+            </button>
+          </li>
+        
+          
+          <li>
+            <button
+              onClick={() => document.getElementById("sponsors").scrollIntoView({ behavior: "smooth", block: "start" })}
+              className={activeLinkId === "sponsors" ? classes.active : classes.notactive}
+            >
+              {lang === "ar" ? "الرعاة" : "Sponsors"}
+            </button>
+          </li>
+
          
         </ul>
 
       </div>
-     
+      <div>
+          {lang === "ar" ? (
+        <button className={classes.notactive}  onClick={() => langChange("en")}>
+         <img className={classes.flags} src={enimg} alt="" srcset="" />
+        </button>
+      ) : (
+        <button className={classes.notactive} onClick={() => langChange("ar")}>
+          <img className={classes.flags} src={arimg} alt="" />
+        </button>
+      )}
+          </div>
       
     </nav>
+    </div>
   );
 }
 
