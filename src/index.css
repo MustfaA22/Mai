@@ -7,6 +7,7 @@
   font-style: normal;
   font-weight: 400;
 }
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -32,7 +33,6 @@
   padding: 0;
   font: inherit;
   font-size: 1.6rem;
-  /* outline: 1px lightgreen solid; */
 }
 
 html {
@@ -44,15 +44,14 @@ p, h1, h2, h3, a {
 }
 
 body:lang(ar) {
-  font-family: 'Tajawal',
-  sans-serif !important;
+  font-family: 'Tajawal', sans-serif !important;
   font-weight: normal;
   font-style: normal;
   line-height: 1.5;
 }
+
 body:lang(en) {
-  font-family: 'Tajawal',
-  sans-serif !important;
+  font-family: 'Tajawal', sans-serif !important;
   font-weight: normal;
   font-style: normal;
   line-height: 1.5;
