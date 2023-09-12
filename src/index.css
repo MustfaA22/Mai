@@ -39,15 +39,12 @@ html {
   font-size: 62.5%;
 }
 
-p, h1, h2, h3, a {
-  direction: rtl;
-}
-
 body:lang(ar) {
   font-family: 'Tajawal', sans-serif !important;
   font-weight: normal;
   font-style: normal;
   line-height: 1.5;
+  direction: rtl;
 }
 
 body:lang(en) {
@@ -55,6 +52,7 @@ body:lang(en) {
   font-weight: normal;
   font-style: normal;
   line-height: 1.5;
+  direction: ltr;
 }
 
 img,
